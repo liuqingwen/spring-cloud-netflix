@@ -219,6 +219,7 @@ public class EurekaClientAutoConfiguration {
 	// .build();
 	// }
 
+	// spring.cloud.service-registry.auto-registration.enabled 默认ture   AutoServiceRegistrationProperties.enabled
 	@Bean
 	@ConditionalOnBean(AutoServiceRegistrationProperties.class)
 	@ConditionalOnProperty(value = "spring.cloud.service-registry.auto-registration.enabled", matchIfMissing = true)
@@ -297,6 +298,7 @@ public class EurekaClientAutoConfiguration {
 			cloudEurekaClient.registerHealthCheck(healthCheckHandler);
 			return cloudEurekaClient;
 		}
+
 
 		@Bean
 		@ConditionalOnMissingBean(value = ApplicationInfoManager.class, search = SearchStrategy.CURRENT)

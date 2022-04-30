@@ -45,6 +45,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 /**
  * @author Daniel Lavoie
  */
+// OptionalArgs  可选参数
 @Configuration(proxyBeanMethods = false)
 public class DiscoveryClientOptionalArgsConfiguration {
 

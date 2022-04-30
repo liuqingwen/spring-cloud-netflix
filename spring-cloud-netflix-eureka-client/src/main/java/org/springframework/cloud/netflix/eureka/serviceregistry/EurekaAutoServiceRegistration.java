@@ -78,6 +78,7 @@ public class EurekaAutoServiceRegistration
 
 		// only initialize if nonSecurePort is greater than 0 and it isn't already running
 		// because of containerPortInitializer below
+		// NonSecurePort 非安全端口
 		if (!this.running.get() && this.registration.getNonSecurePort() > 0) {
 
 			this.serviceRegistry.register(this.registration);

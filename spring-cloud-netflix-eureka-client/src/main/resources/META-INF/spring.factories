@@ -1,3 +1,25 @@
+# org.springframework.cloud.netflix.eureka.config.EurekaClientConfigServerAutoConfiguration
+#   Eureka ????? this.instance.getMetadataMap().put("configPath", prefix);
+# org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration
+#   ???????????
+# org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration
+#   Eureka Client????????Eureka Server???
+#   spring.cloud.service-registry.auto-registration.enabled = false ?????????? EurekaDiscoveryClientConfiguration ??????
+# org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration
+#   ?????????????40s??????? RefreshScopeRefreshedEvent ???????
+# org.springframework.cloud.netflix.eureka.reactive.EurekaReactiveDiscoveryClientConfiguration
+#   ????EurekaClient
+# org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration
+#   Eureka ???????????zone??
+
+
+# org.springframework.cloud.netflix.eureka.config.EurekaConfigServerBootstrapConfiguration
+#   RestTemplateEurekaHttpClient?EurekaClientHttpRequestFactorySupplier ???
+
+
+# org.springframework.cloud.netflix.eureka.config.EurekaConfigServerBootstrapper
+#
+
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 org.springframework.cloud.netflix.eureka.config.EurekaClientConfigServerAutoConfiguration,\
 org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration,\

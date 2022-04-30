@@ -179,15 +179,17 @@ public class EurekaServerAutoConfiguration implements WebMvcConfigurer {
 	 * @param eurekaJerseyApp an {@link Application} for the filter to be registered
 	 * @return a jersey {@link FilterRegistrationBean}
 	 */
-	//@Bean
-	//public FilterRegistrationBean<?> jerseyFilterRegistration(javax.ws.rs.core.Application eurekaJerseyApp) {
-	//	FilterRegistrationBean<Filter> bean = new FilterRegistrationBean<Filter>();
-	//	bean.setFilter(new ServletContainer(eurekaJerseyApp));
-	//	bean.setOrder(Ordered.LOWEST_PRECEDENCE);
-	//	bean.setUrlPatterns(Collections.singletonList(EurekaConstants.DEFAULT_PREFIX + "/*"));
+	// @Bean
+	// public FilterRegistrationBean<?>
+	// jerseyFilterRegistration(javax.ws.rs.core.Application eurekaJerseyApp) {
+	// FilterRegistrationBean<Filter> bean = new FilterRegistrationBean<Filter>();
+	// bean.setFilter(new ServletContainer(eurekaJerseyApp));
+	// bean.setOrder(Ordered.LOWEST_PRECEDENCE);
+	// bean.setUrlPatterns(Collections.singletonList(EurekaConstants.DEFAULT_PREFIX +
+	// "/*"));
 	//
-	//	return bean;
-	//}
+	// return bean;
+	// }
 
 	/**
 	 * Construct a Jersey {@link javax.ws.rs.core.Application} with all the resources
